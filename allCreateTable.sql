@@ -8,11 +8,12 @@ CREATE TABLE Food_stand
 
 CREATE TABLE food
 (
-  name_of_food INT NOT NULL,
+  name_of_food VARCHAR(40) NOT NULL,
   price INT NOT NULL,
   amount_in_stock_ INT NOT NULL,
   expiry_date DATE NOT NULL,
-  PRIMARY KEY (name_of_food)
+  food_id INT NOT NULL,
+  PRIMARY KEY (food_id)
 );
 
 CREATE TABLE visitors
